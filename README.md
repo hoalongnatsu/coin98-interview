@@ -44,7 +44,7 @@ Với `id` là theo format là `<account>/<repository-name>` và `branch` là nh
 terraform apply
 ```
 
-Gõ `yes` và đợi hạ tầng được tạo. Sau khi Terraform chạy xong sẽ in ra URL của Application Load Balancer.
+Gõ `yes` và đợi hạ tầng được tạo. Nếu có lỗi xảy ra thường là do S3 Bucket Name đã tồn tại, ta có thể sửa tên khác trong tệp tin `terraform.tfvars` và chạy `apply` lại. Sau khi Terraform chạy xong sẽ in ra URL của Application Load Balancer.
 
 ```
 Outputs:
