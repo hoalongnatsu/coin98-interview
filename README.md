@@ -38,7 +38,10 @@ repository = {
 }
 ```
 
-Với `id` là theo format là `<account>/<repository-name>` và `branch` là nhánh ta chọn chạy CI/CD. Tiếp theo ta chạy câu lệnh TF:
+Với `id` là theo format là `<account>/<repository-name>` và `branch` là nhánh ta chọn chạy CI/CD.
+
+## Chạy project
+Tiếp theo ta chạy câu lệnh TF:
 
 ```
 terraform init && terraform apply
