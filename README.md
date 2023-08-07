@@ -82,7 +82,7 @@ curl ecs-alb-441303974.ap-southeast-1.elb.amazonaws.com/healthz
 ## API Docs
 GET `/v1/files/:name`
 
-+ API truy cập và tệp tin
++ API truy cập và tải tệp tin
 + `:name` là tên tệp tin ta truy cập
 
 POST `/v1/files/upload`
