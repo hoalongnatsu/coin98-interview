@@ -31,6 +31,7 @@ module "ecs" {
 
 resource "aws_ecr_repository" "api" {
   name = var.ecr_name
+  force_delete = true
 
   tags = local.tags
 }

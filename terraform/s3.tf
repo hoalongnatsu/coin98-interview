@@ -1,7 +1,7 @@
 // S3 for file storage
 resource "aws_s3_bucket" "file_storage" {
   bucket        = var.s3_file_storage
-  force_destroy = false
+  force_destroy = true
 
   tags = local.tags
 }
@@ -32,7 +32,7 @@ resource "aws_s3_bucket_versioning" "file_storage" {
 // S3 for codepipeline artifacts
 resource "aws_s3_bucket" "codepipeline_artifacts" {
   bucket        = var.s3_codepipeline_artifacts
-  force_destroy = false
+  force_destroy = true
 
   tags = local.tags
 }
