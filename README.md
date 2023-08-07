@@ -98,4 +98,4 @@ DELETE `/v1/files/:name`
 + API xóa tệp tin
 + `:name` là tên tệp tin ta muốn xóa
 
-**Note**: xong khi chạy xong ta nhớ chạy `terraform destory`.
+**Note**: sau khi chạy xong ta nhớ chạy `terraform destory`.
