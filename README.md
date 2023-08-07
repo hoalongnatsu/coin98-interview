@@ -41,7 +41,7 @@ repository = {
 Với `id` là theo format là `<account>/<repository-name>` và `branch` là nhánh ta chọn chạy CI/CD. Tiếp theo ta chạy câu lệnh TF:
 
 ```
-terraform apply
+terraform init && terraform apply
 ```
 
 Gõ `yes` và đợi hạ tầng được tạo. Nếu có lỗi xảy ra thường là do S3 Bucket Name đã tồn tại, ta có thể sửa tên khác trong tệp tin `terraform.tfvars` và chạy `apply` lại. Sau khi Terraform chạy xong sẽ in ra URL của Application Load Balancer.
