@@ -1,0 +1,44 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "1",
+      "Effect": "Allow",
+      "Action": [
+        "sts:*",
+        "ecs:*",
+        "ecr:*",
+        "ec2:*",
+        "codecommit:GitPull",
+        "ssm:GetParameters"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "2",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetBucketAcl",
+        "logs:CreateLogGroup",
+        "logs:PutLogEvents",
+        "codebuild:CreateReportGroup",
+        "codebuild:CreateReport",
+        "s3:PutObject",
+        "s3:GetObject",
+        "logs:CreateLogStream",
+        "codebuild:UpdateReport",
+        "codebuild:BatchPutCodeCoverages",
+        "codebuild:BatchPutTestCases",
+        "s3:GetBucketLocation",
+        "s3:GetObjectVersion"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "3",
+      "Effect": "Allow",
+      "Action": "codestar-connections:UseConnection",
+      "Resource": "*"
+    }
+  ]
+}

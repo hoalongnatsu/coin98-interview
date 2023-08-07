@@ -1,0 +1,19 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "kms:Decrypt",
+        "ssm:GetParameters",
+        "secretsmanager:GetSecretValue",
+        "s3:GetObject",
+        "s3:GetBucketLocation",
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Resource": "*"
+    }
+  ]
+}
