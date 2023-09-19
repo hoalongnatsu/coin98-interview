@@ -1,5 +1,3 @@
-# Coin98 Interview
-
 ## Sơ đồ hệ thống
 
 ![](/images/icon-coin98.png)
